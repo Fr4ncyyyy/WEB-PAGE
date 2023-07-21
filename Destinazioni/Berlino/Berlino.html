@@ -1,0 +1,101 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Berlino.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var currentImage = 1; // Immagine attualmente visualizzata
+
+                // Funzione per scorrere all'immagine successiva
+                function nextImage() {
+                    $(".background").animate({ opacity: 0 }, 500, function() {
+                        $(".background").css("background-image", "url('../Berlino/Foto/" + currentImage + ".jpg')");
+                        currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                        $(".background").animate({ opacity: 1 }, 500);
+                    });
+                }
+
+                // Funzione per scorrere all'immagine precedente
+                function previousImage() {
+                    currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                    $(".background").animate({ opacity: 0 }, 300, function() {
+                        $(".background").css("background-image", "url('../Berlino/Foto/" + currentImage + ".jpg')");
+                        $(".background").animate({ opacity: 1 }, 300);
+                    });
+                }
+
+                // Gestore dell'evento per la freccia a destra
+                $("#destra").click(function() {
+                    nextImage();
+                });
+
+                // Gestore dell'evento per la freccia a sinistra
+                $("#sinistra").click(function() {
+                    previousImage();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+        <div class="container">
+            <div class="background">     
+                <div class="arrow left"><i id="destra" class='bx bx-chevron-left'></i></div>      
+                <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right'></i></div>    
+            </div>
+        </div>
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+            <h2>Berlino</h2>
+            <p>Berlino, la vibrante capitale della Germania, è una città che affascina con la sua storia complessa, la cultura eclettica e l'atmosfera cosmopolita. Situata al crocevia tra l'Europa orientale e occidentale, Berlino è diventata un simbolo di rinascita e resilienza dopo essere stata segnata da eventi storici di portata mondiale.<br /><br />
+                La storia di Berlino è palpabile ovunque si vada. I resti del Muro di Berlino, che un tempo divideva la città, sono diventati un memoriale emozionante che ricorda la lotta per la libertà e l'unità del popolo tedesco. Passeggiando lungo la famosa Unter den Linden, la maestosa via alberata, si incontrano monumenti iconici come la Porta di Brandeburgo e il Reichstag, il parlamento tedesco, che simboleggiano il passato e il futuro di Berlino.<br /><br />
+                Ma Berlino è molto più di una città di storia antica. È un calderone culturale dove si fondono arte, musica, moda e design. Gli artisti di strada dipingono i muri con murales audaci, i mercati delle pulci offrono tesori nascosti e i club notturni sono famosi in tutto il mondo per la loro scena musicale elettronica. I quartieri come Kreuzberg, Prenzlauer Berg e Friedrichshain sono affascinanti e vivaci, con caffè alla moda, boutique alla moda e una miriade di ristoranti che offrono cucine internazionali.<br /><br />
+                Berlino è anche una città verde, con numerosi parchi e spazi verdi che invitano a lunghe passeggiate o a rilassarsi sotto il sole. Il Tiergarten, il polmone verde della città, è un'oasi di tranquillità con laghi pittoreschi, prati verdi e monumenti storici. Lungo le rive del fiume Spree, si possono trovare spiagge artificiali e bar galleggianti dove ci si può rilassare e godersi la vista.<br /><br />
+                L'offerta museale di Berlino è semplicemente straordinaria. L'Isola dei Musei, riconosciuta come Patrimonio dell'Umanità dall'UNESCO, ospita una collezione eccezionale di opere d'arte e manufatti storici. Dal Pergamonmuseum, che ospita il celebre Altare di Pergamo, al Neues Museum, con il famoso busto di Nefertiti, gli amanti dell'arte e della storia rimarranno incantati dalle opere esposte.<br /><br />
+                Infine, la scena culinaria di Berlino è varia ed eccellente. Dai tradizionali piatti tedeschi come le salsicce e il sauerkraut alle cucine internazionali, Berlino offre una vasta scelta di ristoranti, caffè e mercati alimentari. Gli amanti della birra troveranno birrifici artigianali in ogni angolo della città, mentre i dolci amanti non possono perdere l'opportunità di gustare un autentico strudel di mele o una fetta di torta al cioccolato in una delle rinomate pasticcerie.</p>
+                <div class="pulsanti">
+                    <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Berlino">Leggenda</a></p>
+                    <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Berlino">Consigli</a></p>
+                </div>
+            </div>
+        <footer class="footer1">
+            <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+        </footer>
+    </body>
+</html>

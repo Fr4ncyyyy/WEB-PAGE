@@ -1,0 +1,145 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Islanda.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+
+            // Funzione per scorrere all'immagine successiva
+            function nextImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    $(".background").css("background-image", "url('../Islanda/Foto/" + currentImage + ".jpg')");
+                    currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Funzione per scorrere all'immagine precedente
+            function previousImage() {
+                currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                $(".background").animate({ opacity: 0 }, 300, function() {
+                    $(".background").css("background-image", "url('../Islanda/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 300);
+                });
+            }
+            // Gestore dell'evento per la freccia a destra
+            $("#destra").click(function() {
+                nextImage();
+            });
+
+            // Gestore dell'evento per la freccia a sinistra
+            $("#sinistra").click(function() {
+                previousImage();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $(".header__iconbar").click(function(e) {
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                });
+            });
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass('is_open');
+                e.preventDefault();
+            });
+        });
+    </script>
+  </script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $(".header__iconbar").click(function(e) {
+        $(".Lista").toggleClass('is_open');
+        e.preventDefault();
+      });
+    });
+  </script>
+  </head>
+  <body>
+      <script>
+          $(document).ready(function(){
+              $(".header__iconbar").click(function(e){
+                  $(".Lista").toggleClass('is_open');
+                  e.preventDefault();
+              })
+          });
+      </script>
+    </head>
+    <body>
+        <!----------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    <div class="container">
+        <div class="background">     
+        <div class="arrow left"><i id="destra" class='bx bx-chevron-left' onclick="prec()"></i></div>      
+        <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right' onclick="succ()"></i></div>    
+        </div>
+        </div>
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+          <h2>Islanda</h2>
+          <p>L'Islanda, un gioiello nordico situato tra l'Europa e il Nord America, è una terra di straordinaria bellezza naturale e avventure epiche. Con i suoi paesaggi mozzafiato, vulcani attivi, ghiacciai maestosi e sorgenti termali, questo paese affascinante offre un'esperienza unica che ti lascerà senza fiato.<br /><br />
+            Immagina di trovarsi in una terra di estremi contrasti, dove il fuoco e il ghiaccio si mescolano armoniosamente. Gli spettacolari ghiacciai dell'Islanda, come il Vatnajökull, il più grande d'Europa, dominano il paesaggio con la loro imponenza glaciale. I visitatori possono esplorare grotte di ghiaccio, scalare le pareti di ghiaccio o addirittura avventurarsi in escursioni guidate sulla superficie glaciale.<br /><br />
+            Ma l'Islanda non è solo ghiaccio. Il paesaggio è punteggiato da maestosi vulcani, alcuni dei quali ancora attivi. Il monte Hekla e l'Eyjafjallajökull sono diventati famosi in tutto il mondo per le loro eruzioni spettacolari. Gli amanti del trekking possono sfidarsi sulle piste dei vulcani o immergersi nelle caldere vulcaniche per vivere un'avventura unica.<br /><br />
+            Le cascate dell'Islanda sono un altro elemento distintivo del paesaggio. La Cascata di Gullfoss, con le sue potenti acque che si gettano in un burrone, è un vero spettacolo da ammirare. La Cascata di Skógafoss, alta 60 metri, incanta i visitatori con il suo arco di acqua che si riflette nella luce del sole.<br /><br />
+            Ma la vera meraviglia dell'Islanda risiede nelle sue sorgenti termali. Le acque calde e rilassanti delle piscine termali come la celebre Laguna Blu o le sorgenti di Reykjadalur offrono un'esperienza di benessere unica. Ci si può immergere nelle acque termali, circondati da paesaggi spettacolari e godersi il tepore curativo delle acque naturali.<br /><br />
+            L'Islanda è anche patria di una fauna unica. Le scogliere dell'isola sono popolate da colonie di uccelli marini, tra cui puffini, pulcinelle di mare e gabbiani. Gli amanti della fauna selvatica possono avvistare balene durante escursioni in barca o avventurarsi nella riserva naturale di Skaftafell per incontrare le foche che riposano sugli iceberg.</p>
+            <div class="pulsanti">
+                <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Islanda">Leggenda</a></p>
+                <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Islanda">Consigli</a></p>
+            </div>
+        </div>
+        <footer class="footer1">
+          <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+      </footer>
+    </body>
+</html>

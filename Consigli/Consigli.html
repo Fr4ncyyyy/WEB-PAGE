@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Racconti | HappyTravel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../Consigli/Consigli.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="" class="header__iconbar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="Lista" id="menu">
+            <li class="OggettoLista"><a target="_blank" href="../Home/Home.html">Home</a></li>
+            <li class="OggettoLista"><a target="_blank" href="../Destinazioni/Destinazioni.html">Destinazioni</a></li>
+            <li class="OggettoLista"><a href="../Racconti/Racconti.html">Leggende</a></li>
+            <li class="OggettoLista"><a style="text-decoration: underline; color:#fff" href="#">Consigli</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </header>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+            var totalImages = 29; // Numero totale di immagini
+            var intervalId;
+
+            // Funzione per cambiare l'immagine successiva
+            function changeImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    currentImage = (currentImage % totalImages) + 1;
+                    $(".background").css("background-image", "url('../Racconti/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Avvia lo slideshow automatico
+            function startSlideshow() {
+                intervalId = setInterval(changeImage, 5000);
+            }
+
+            // Ferma lo slideshow automatico
+            function stopSlideshow() {
+                clearInterval(intervalId);
+            }
+
+            // Avvia lo slideshow automatico all'avvio della pagina
+            startSlideshow();
+
+            // Gestione del click sull'icona della barra di navigazione
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass("is_open");
+                e.preventDefault();
+            });
+
+            // Aggiungi animazione di scorrimento alla sezione corrispondente al link cliccato
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var target = $(this).attr("href");
+                var offset = $(target).offset().top;
+
+                $("html, body").animate({ scrollTop: offset }, 800);
+            });
+        });
+    </script>
+
+    <!-- Resto del tuo codice HTML -->
+    <div class="container">
+        <div class="background"></div>
+    </div>
+    <section class="NAVBAR_interna">
+        <ul class="Lista" id="menu">
+            <li class="Item"><a href="#Item_Norvegia">Norvegia</a></li>
+            <li class="Item"><a href="#Item_Azzorre">Azzorre</a></li>
+            <li class="Item"><a href="#Item_Berlino">Berlino</a></li>
+            <li class="Item"><a href="#Item_Tokyo">Tokyo</a></li>
+            <li class="Item"><a href="#Item_Botswana">Botswana</a></li>
+            <li class="Item"><a href="#Item_Hawaii">Hawaii</a></li>
+            <li class="Item"><a href="#Item_Islanda">Islanda</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </section>
+    <div class="items-container">
+    <section id="Item_Norvegia" class="Item_Norvegia">
+        <div class="B1">
+        </div>
+        <h1 style="color:rgba(65, 105, 225);">Norvegia</h1>
+        <ul>
+            <li class="item_norv">Abbigliamento invernale</li>
+            <p>Se visiti la Norvegia in inverno, assicurati di portare abbigliamento adatto al freddo, come giacche pesanti, cappotti imbottiti, sciarpe, guanti e cappelli.
+                Vestiti a strati per adattarti ai cambiamenti di temperatura durante il giorno.</p>
+            <li class="item_norv">Abbigliamento estivo</li>
+            <p>In estate, il clima può essere più mite, ma è comunque
+            consigliabile portare giacche leggere e maglie a maniche lunghe per le serate più fresche.</p>
+            <li class="item_norv">Articoli per l'attività all'aperto</li>
+            <p>Se hai intenzione di fare escursioni, sciare o fare altre attività all'aperto, assicurati di portare
+                attrezzatura adeguata, come bastoncini da trekking, occhiali da sole, cappelli, ecc.</p>
+            <li class="item_norv">Costumi da bagno</li>
+            <p>Se visiti le regioni costiere o le isole norvegesi, considera di portare un costume da bagno,
+                poiché ci sono numerose opportunità per nuotare o fare attività acquatiche.</p>
+            <li class="item_norv">Cappello e crema solare</li>
+            <p>Anche se la Norvegia è situata a latitudini settentrionali, il sole estivo può essere abbastanza intenso, quindi porta
+                un cappello e una crema solare per proteggerti dagli effetti nocivi del sole.</p>
+            <li class="item_norv">Adattatori di corrente</li>
+            <p>La Norvegia utilizza prese elettriche di tipo C e F, quindi assicurati
+                di portare adattatori di corrente se i tuoi dispositivi hanno spine diverse.</p>
+            <li class="item_norv">Zaino resistente</li>
+            <p>Un buon zaino è essenziale per portare con
+                te tutto ciò di cui hai bisogno durante le tue escursioni o attività all'aperto.</p>
+            <li class="item_norv">Fotocamera e binocolo</li>
+            <p>La Norvegia offre panorami spettacolari e un'abbondanza di fauna selvatica, quindi porta con te una fotocamera
+                di buona qualità e, se possibile, un binocolo per avvistare meglio la fauna locale.</p>
+            <li class="item_norv">Medicinali e kit di pronto soccorso</li>
+            <p>Porta con te i tuoi farmaci personali e un
+                kit di pronto soccorso contenente cerotti, disinfettante e medicinali di base.</p>
+            <li class="item_norv">Guida turistica e mappe</li>
+            <p>Una guida turistica o mappe della Norvegia possono
+                essere utili per pianificare i tuoi spostamenti e trovare punti di interesse.</p>
+        </ul>
+        </section>
+    <hr id="Item_Azzorre" style="width:100%; border:1px solid black">
+    <section class="Item_Azzorre">
+        <video class="B1" autoplay muted loop>
+            <source style="width:15em;" src="Azzorre/1.mp4">
+        </video>
+        <h1 style="color:#87CEEB;">Azzorre</h1>
+        <ul>
+            <li>Abbigliamento Leggero</li>
+            <p>In estate, le Azzorre possono essere calde e soleggiate,
+                quindi porta abiti leggeri, come magliette, pantaloncini e abbigliamento estivo.</p>
+            <li>Stati Leggeri</li>
+            <p>Poiché il clima può essere variabile, soprattutto in primavera e autunno,
+                è utile avere strati leggeri aggiuntivi come maglie a maniche lunghe e giacche leggere.</p>
+            <li>Giacca impermeabile</li>
+            <p>Le Azzorre possono essere soggette a piogge
+                improvvise, quindi è consigliabile portare una giacca o un mantello impermeabile.</p>
+            <li>Scarpe comode</li>
+            <p>Per esplorare le splendide escursioni e le meraviglie naturali delle Azzorre,
+                indossa scarpe comode da trekking o scarpe da ginnastica resistenti.</p>
+            <li>Costumi da bagno</li>
+            <p>Le Azzorre offrono belle spiagge e
+                piscine naturali, quindi non dimenticare il costume da bagno se vuoi fare un tuffo.</p>
+            <li>Attrezzatura fotografica</li>
+            <p>Le Azzorre offrono paesaggi mozzafiato e la possibilità di avvistare balene e delfini. Assicurati di portare una
+                fotocamera di buona qualità per catturare questi momenti speciali.</p>
+            <li>Zaino da escursione</li>
+            <p>Per le escursioni, porta un zaino
+                in cui poter mettere l'acqua, snack, una mappa e una fotocamera.</p>
+            <li>Attrezzatura Fotografica</li>
+            <p>Le Azzorre offrono paesaggi mozzafiato e la possibilità di avvistare balene e delfini. Assicurati
+                di portare una fotocamera di buona qualità per catturare questi momenti speciali.</p>
+        </ul>
+        <div class="B2">
+        </div>
+        </section>
+    <hr id="Item_Berlino" style="width:100%; border:1px solid black">
+    <section class="Item_Berlino">
+        <div class="B1">
+        </div>
+        <h1 style="color:#FF0000;">Berlino</h1>
+        <ul>
+            <li>Abbigliamento versatile</li>
+            <p>Berlino ha un clima continentale,
+                quindi l'abbigliamento varierà a seconda della stagione del tuo viaggio.
+                In estate, porta abbigliamento leggero come magliette, pantaloncini e vestiti estivi. 
+                In inverno, invece, avrai bisogno di indumenti più pesanti, come cappotti, maglioni, 
+                ciarpe e guanti.</p>
+            <li>Scarpe comode</li>
+            <p>Prevedi di camminare molto per esplorare la città, quindi assicurati di avere scarpe comode e resistenti,
+                come scarpe da ginnastica o scarponcini da trekking leggeri.</p>
+            <li>Impermeabile o Ombrello</li>
+            <p>Berlino può essere piovosa, quindi è meglio essere preparati con
+                un impermeabile o un ombrello compatti.</p>
+            <li>Borsa a tracolla o zaino</li>
+            <p>Un'opzione pratica per trasportare le tue cose
+                durante le escursioni giornaliere è una borsa a tracolla o uno zaino.</p>
+            <li>Carta di trasporto pubblico</li>
+            <p>Se prevedi di utilizzare i mezzi pubblici, considera l'acquisto di una carta di
+                trasporto pubblico per muoverti comodamente per la città.</p>
+            <li>Attrezzatura fotografica</li>
+            <p>Berlino è una città ricca di monumenti, arte e architettura unica. Porta con te
+                una fotocamera per catturare tutti i momenti speciali del tuo viaggio.</p>
+        </ul>
+            <div class="B2">
+            </div>
+        </section>
+    <hr id="Item_Tokyo" style="width:100%; border:1px solid black">
+    <section class="Item_Tokyo">
+        <div class="B1">
+        </div>
+        <h1 style="color:#FFA500;">Tokyo</h1>
+        <ul>
+            <li>Abbigliamento comodo</li>
+            <p>Tokyo può essere calda e umida in estate e fredda in inverno. Porta abbigliamento comodo e adatto alla stagione del tuo viaggio, come magliette leggere, pantaloncini o gonne in estate,
+                e abbigliamento più pesante, come giacche e maglioni, in inverno.</p>
+            <li>Scarpe comode</li>
+            <p>Prevedi di camminare molto a Tokyo, quindi assicurati
+                di avere scarpe comode e resistenti per esplorare la città.</p>
+            <li>Protezione solare e occhiali da sole</li>
+            <p>Durante l'estate, il sole può essere abbastanza forte,
+                quindi proteggiti con una buona crema solare e occhiali da sole.</p>
+            <li>Ombrello o impermeabile</li>
+            <p>Tokyo è soggetta a piogge occasionali,
+                quindi è utile avere un ombrello compatto o un impermeabile a portata di mano.</p>
+            <li>Borsa a tracolla o zaino</li>
+            <p>Per le escursioni giornaliere, un'opzione pratica è
+                una borsa a tracolla o uno zaino per trasportare le tue cose.</p>
+            <li>App di traduzione</li>
+            <p>Se non parli fluentemente giapponese, puoi scaricare un'app
+                di traduzione per aiutarti a comunicare meglio con i locali.</p>
+            <li>Attrezzatura fotografica</li>
+            <p>Tokyo è una città vibrante con molte attrazioni da fotografare, quindi non dimenticare di
+                portare una fotocamera per catturare i momenti speciali.</p>
+            <p></p>
+        </ul>
+            <div class="B2">
+            </div>
+        </section>
+    <hr id="Item_Botswana" style="width:100%; border:1px solid black">
+    <section class="Item_Botswana">
+        <div class="B1">
+        </div>
+        <h1 style="color:#8B4513;">Botswana</h1>
+        <ul>
+            <li>Abbigliamento leggero e traspirante</li>
+            <p>Il Botswana ha un clima caldo e secco, quindi porta abbigliamento leggero, come magliette, pantaloncini e abiti estivi.
+                Assicurati che gli indumenti siano traspiranti per sopportare il caldo.</p>
+            <li>Cappello e occhiali da sole</li>
+            <p>Proteggiti dai raggi solari intensi
+                con un cappello a tesa larga e occhiali da sole con protezione UV.</p>
+            <li>Abbigliamento più pesante per le serate</li>
+            <p>Le serate possono essere fresche, quindi assicurati di portare anche qualche
+                indumento più pesante, come una felpa o una giacca leggera.</p>
+            <li>Scarpe comode</li>
+            <p>Per le attività di safari e le escursioni,
+                indossa scarpe comode e resistenti, come scarponcini da trekking o sandali chiusi.</p>
+            <li>Cappotto antipioggia</li>
+            <p>Se visiti il Botswana durante la stagione delle piogge (dicembre-aprile),
+                considera l'opportunità di portare un cappotto antipioggia leggero.</p>
+            <li>Libro di riferimento sulla fauna selvatica</li>
+            <p>Porta con te un libro di riferimento sulla fauna selvatica
+                per identificare gli animali che incontri durante i safari.</p>
+            <li>Kit di primo soccorso</li>
+            <p>Preparati con un kit di primo soccorso contenente cerotti,
+                disinfettante e medicinali di base per eventuali emergenze.</p>
+        </ul>
+            <div class="B2">
+            </div>
+        </section>
+    <hr id="Item_Hawaii" style="width:100%; border:1px solid black">
+    <section class="Item_Hawaii">
+        <div class="B1">
+        </div>
+        <h1 style="color:#00B2B2;">Hawaii</h1>
+        <ul>
+            <li>Abbigliamento estivo</li>
+            <p>Le Hawaii hanno un clima tropicale, quindi porta abbigliamento leggero,
+                come magliette, pantaloncini, abiti estivi e costumi da bagno.</p>
+            <li>Sandali o infradito</li>
+            <p>Indossa sandali comodi o infradito per camminare
+                sulla sabbia calda delle spiagge hawaiane.</p>
+            <li>Abbigliamento leggero a maniche lunghe</li>
+            <p>Per proteggerti dal sole, porta alcuni capi leggeri a maniche lunghe o copri
+                le spalle con una camicia leggera quando stai fuori al sole.</p>
+            <li>Abbigliamento più pesante per le serate</li>
+            <p>In alcune zone delle Hawaii, le serate possono essere più fresche,
+                quindi porta anche un maglione leggero o una giacca leggera.</p>
+            <li>Insetticida</li>
+            <p>Se hai intenzione di fare escursioni o trascorrere del tempo in aree più selvagge,
+                porta un insetticida per proteggerti dalle punture di insetti.</p>
+        </ul>
+            <div class="B2">
+            </div>
+        </section>
+    <hr id="Item_Islanda" style="width:100%; border:1px solid black">
+    <section class="Item_Islanda">
+        <div class="B1">
+        </div>
+        <h1 style="color:green;">Islanda</h1>
+        <ul>
+            <li>Abbigliamento invernale</li>
+            <p>L'Islanda può essere fredda, anche in estate, quindi porta abbigliamento invernale
+                come giacche pesanti, maglioni, sciarpe, guanti e cappelli.</p>
+            <li>Strati di abbigliamento</li>
+            <p>Indossa abbigliamento a strati per adattarti
+                ai cambiamenti di temperatura durante il giorno.</p>
+            <li>Berretto e guanti</li>
+            <p>Proteggi te stesso dal freddo portando un berretto caldo e guanti.</p>
+            <li>Scarpe da trekking resistenti</li>
+            <p>Per esplorare i paesaggi islandesi, avrai bisogno di
+                scarpe da trekking robuste e impermeabili.</p>
+            <li>Guida turistica o mappa</li>
+            <p>Porta con te una guida turistica o una mappa dell'Islanda per
+                aiutarti a orientarti e scoprire le principali attrazioni.</p>
+        </ul>
+            <div class="B2">
+            </div>
+        </section>
+    </div>
+    <footer class="footer2">
+        <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+    </footer>
+</body>
+</html>

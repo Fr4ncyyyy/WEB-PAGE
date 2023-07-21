@@ -1,0 +1,96 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css
+
+
+
+        ">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!------------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a href="#">Destinazioni</a></li>
+                <li class="OggettoLista"><a target="_blank" href="../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+        <div class="Titolo"><h1 style="align-items:center;font-style: italic;font-size: 50px;margin-top: 20px;">I miei <span style="color:blue;">Viaggi</span></h1></div>
+        <section class="Destinazioni">
+            <div class="Norvegia"><a href="Norvegia/Norvegia.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div style="font-size:20px;" class="Testo">Esplora la magia della Norvegia, una terra di fiordi incantevoli e montagne maestose.
+                    Scopri i segreti nascosti dei fiordi norvegesi, ammira le città pittoresche come Oslo e Bergen, e vivi l'esperienza unica del sole di mezzanotte.
+                    La Norvegia ti aspetta con la sua natura e un'accoglienza spettacolare.
+                </div>
+                </a>
+            </div>
+            <div class="Azzorre"><a href="Azzorre/Azzorre.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div style="font-size:20px" class="Testo">Esplora l'incanto selvaggio delle Azzorre:
+                    un arcipelago vulcanico nel cuore dell'Atlantico. Lagune Azzurre, grotte misteriose
+                    e città affascinanti ti attendono. Sperimenta avventure subacquee, scopri paesaggi mozzafiato
+                    e delizia il palato con sapori unici. Le Azzorre ti regalano una vacanza indimenticabile tra natura
+                    incontaminata e autentica bellezza.
+                </div></a>
+            </div>
+            <div class="Berlino"><a href="Berlino/Berlino.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div style="font-size:20px" class="Testo">Berlino: storia, arte, modernità. Un mix esplosivo di cultura,
+                    vita notturna e creatività. Dai resti del Muro alla Porta di Bredenburgo, lasciati affascinare da questa metropoli eclettica.
+                    Esplora quartieri trendy, scopri musei di classe mondiale e goditi una scena culinaria internazionale. Berlino ti aspetta con
+                    le sue infinite sorprese e un'atmosfera unica da vivere.</div>
+            </div>
+            <div style="font-size:20px" class="Tokyo"><a href="Tokyo/Tokyo.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div class="Testo">Tokyo: tradizione e tecnologia in perfetta armonia.
+                    Quartieri vivaci, grattacieli mozzafiato, cultura antica,e moda futuristica.
+                    Perdi te stesso tra le luci di Shibuya, assapora il sushi fresco e vivi l'atmosfera unica di questa città affascinante.
+                    Tokyo ti aspetta per un'avventura senza limiti.
+                </div></a>
+            </div>
+            <div class="Botswana"><a href="Botswana/Botswana.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div style="font-size:20px" class="Testo">Botswana: un'esplosione di safari e natura selvaggia.
+                    Delta dell'Okavango, elefanti imponenti, deserto del Kalahari. Lodges di lusso e avventure autentiche ti aspettano.
+                    Scopri un paradiso incontaminato nel cuore dell'africa.</div></a>
+            </div>
+            <div class="Hawaii"><a href="Hawaii/Hawaii.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div style="font-size:20px" class="Testo">Scopri l'incanto di Hawaii: spiagge paradisiache,
+                vulcani attivi e cultura aloha. Un'esperienza tropicale unica e indimenticabile ti aspetta!</div></a>
+            </div>
+            <div class="Islanda"><a href="Islanda/Islanda.html" style="text-decoration:none;">
+                <div class="img"></div>
+                <div style="font-size:20px" class="Testo">Esplora l'Islanda:
+                    un paradiso di fuoco, ghiaccio e meraviglie naturali. Cascate epiche,
+                    vulcani imponenti, grotte di ghiaggio e aurora boreale: un'avventura che ti lascierà senza fiato.</div></a>
+            </div>
+    </section>
+    <footer class="footer1">
+        <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+    </footer>
+    </body>
+</html>

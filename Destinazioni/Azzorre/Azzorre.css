@@ -1,0 +1,288 @@
+/*--------------------------
+        IMMGAINI
+--------------------------*/
+
+.container
+{
+  width: 90%; 
+  height:30em;
+  margin: 0 auto;
+  margin-left: 5%; 
+  margin-right: 5%;
+  margin-top:30px;
+  border:2px solid black;
+  position: relative;
+  border-radius: 10px;
+}
+.background
+{
+  position: relative;
+  height: 30em;
+  background-image: url('../Azzorre/Foto/1.jpg');  
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center;
+}
+  .arrow
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height:40px;
+    color: white;
+    font-size:80px;
+}
+.arrow:hover
+{
+  cursor:pointer;
+}
+  .left
+{ 
+  left: 0px;
+}
+  .right
+{
+  right: 30px;
+}
+/*--------------------------
+        BENNER
+--------------------------*/
+
+.Banner .B1
+{
+  position: absolute;
+  width:15%;
+  height:auto;
+  left:5%;
+  bottom:25%;
+  border:2px solid black;
+}
+.Banner video
+{
+  position: absolute;
+  width:15%;
+  height:auto;
+  border:2px solid black;
+  right:5%;
+  bottom:25%;
+}
+.Banner .B3
+{
+  position: absolute;
+  width:15%;
+  height:auto;
+  border:2px solid black;
+  bottom:7.5%;
+  left:5%;
+}
+.Banner .B4
+{
+  position: absolute;
+  width:15%;
+  height:auto;
+  border:2px solid black;
+  bottom:7.5%;
+  right:5%;
+}
+.Banner .B5
+{
+  position: absolute;
+  width:26%;
+  height:100px;
+  border:2px solid black;
+  bottom:-1.9%;
+  right:37%;
+}
+
+/*--------------------------
+        TESTO
+--------------------------*/
+
+.container_testo
+{
+  position: relative;
+  width:50%;
+  border:2px solid black;
+  height:auto;
+  left:25%;
+  bottom:4em;
+  background-color:F5F5F5;
+  border-radius: 8px;
+  box-sizing: border-box;
+  padding:20px;
+}
+.container_testo h2
+{
+  text-align: center;
+  font-style: italic;
+  color:#87CEEB;
+}
+.container_testo p
+{
+  text-align: justify;
+  color:#000;
+}
+.pulsanti
+{
+  display: flex;
+  justify-content: center;
+}
+#ciao
+{
+  text-align: center;
+  padding:15px;
+  border-radius: 5px;
+  background-color:#87CEEB;
+  border:2px solid black;
+  margin-top:50px;
+  margin-bottom:0;
+  margin-right:15px;
+}
+#ciao:hover
+{
+  transition: 0.3s;
+  background-color:#06b1f5;
+}
+#ciao1
+{
+  text-align: center;
+  padding:15px;
+  border-radius: 5px;
+  background-color:#87CEEB;
+  border:2px solid black;
+  margin-top:50px;
+  margin-bottom:0;
+  margin-left:15px;
+}
+#ciao1:hover
+{
+  transition: 0.3s;
+  background-color:#06b1f5;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+
+@media(max-width:1316px)
+{
+  .Banner
+  {
+    display: none;
+  }
+}
+@media(max-width:1175px)
+{
+  .container
+  {
+    position:relative;
+  }
+  .container_testo
+  {
+    position: relative;
+    bottom:-30px;
+    border:none;
+    background-color:#D3D3D3;
+    padding:0px;
+    width:70%;
+    left: 15%;
+  }
+  .arrow
+  {
+    display: none;
+  }
+}
+@media(max-width:860px)
+{
+  .container_testo p 
+  {
+    font-size:15px;
+  }
+}
+@media(max-width:763px)
+{
+  .container_testo p 
+  {
+    font-size:14px;
+  }
+}
+@media(max-width:641px)
+{
+  .container_testo p 
+  {
+    font-size:13px;
+  }
+}
+@media(max-width:543px)
+{
+  .container_testo p 
+  {
+    font-size:11.8px;
+  }
+}
+/*--------------------------
+        IPHONE XR
+--------------------------*/
+
+@media(max-width:414px) and (max-height:896px)
+{
+  .container_testo p 
+  {
+    font-size:11.5px;
+  }
+}
+/*--------------------------
+        IPHONE 12PRO
+--------------------------*/
+
+@media(max-width:390px) and (max-height:844px)
+{
+  .container_testo p 
+  {
+    font-size:11px;
+  }
+}
+/*--------------------------
+        IPHONE 12PRO
+--------------------------*/
+
+@media(max-width:393px) and (max-height:851px)
+{
+  .container_testo p 
+  {
+    font-size:11px;
+  }
+}
+/*--------------------------
+      SAMSUNG GALAXY S8+
+--------------------------*/
+
+@media(max-width:360px) and (max-height:740px)
+{
+  .container_testo p 
+  {
+    font-size:10.5px;
+  }
+}
+/*--------------------------
+  SAMSING GALAXY S20 ULTRA
+--------------------------*/
+
+@media(max-width:412px) and (max-height:915px)
+{
+  .container_testo p 
+  {
+    font-size:11px;
+  }
+}
+/*--------------------------
+        GALAXY FOLD
+--------------------------*/
+
+@media(max-width:280px) and (max-height:653px)
+{
+  .container_testo p 
+  {
+    font-size:9.4px;
+  }
+}

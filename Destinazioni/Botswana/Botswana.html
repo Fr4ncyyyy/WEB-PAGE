@@ -1,0 +1,144 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Botswana.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+
+            // Funzione per scorrere all'immagine successiva
+            function nextImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    $(".background").css("background-image", "url('../Botswana/Foto/" + currentImage + ".jpg')");
+                    currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Funzione per scorrere all'immagine precedente
+            function previousImage() {
+                currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                $(".background").animate({ opacity: 0 }, 300, function() {
+                    $(".background").css("background-image", "url('../Botswana/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 300);
+                });
+            }
+            // Gestore dell'evento per la freccia a destra
+            $("#destra").click(function() {
+                nextImage();
+            });
+
+            // Gestore dell'evento per la freccia a sinistra
+            $("#sinistra").click(function() {
+                previousImage();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $(".header__iconbar").click(function(e) {
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                });
+            });
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass('is_open');
+                e.preventDefault();
+            });
+        });
+    </script>
+  </script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $(".header__iconbar").click(function(e) {
+        $(".Lista").toggleClass('is_open');
+        e.preventDefault();
+      });
+    });
+  </script>
+  </head>
+  <body>
+      <script>
+          $(document).ready(function(){
+              $(".header__iconbar").click(function(e){
+                  $(".Lista").toggleClass('is_open');
+                  e.preventDefault();
+              })
+          });
+      </script>
+    </head>
+    <body>
+        <!----------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    <div class="container">
+        <div class="background">     
+        <div class="arrow left"><i id="destra" class='bx bx-chevron-left' onclick="prec()"></i></div>      
+        <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right' onclick="succ()"></i></div>    
+        </div>
+        </div>
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+          <h2>Botswana</h2>
+          <p>Il Botswana, un gioiello dell'Africa meridionale, è una terra di meraviglie naturali e avventure autentiche. Con la sua vasta savana, deserti suggestivi e fiumi imponenti, questo paese ricco di biodiversità è un vero paradiso per gli amanti della natura e gli esploratori.<br /><br />
+            Il Botswana è famoso per il suo gioiello più prezioso, il Delta dell'Okavango. Questo sistema fluviale unico al mondo si espande nella stagione delle piogge, trasformando le pianure in una delle più grandi paludi interne del pianeta. Qui, gli appassionati di safari possono esplorare l'acqua cristallina in tradizionali mokoro (cayuco) o in barche a motore, alla scoperta di elefanti, bufali, ippopotami e una miriade di uccelli colorati che abitano questa regione.<br /><br />
+            Il Parco Nazionale Chobe, con i suoi vasti branchi di elefanti e una fauna selvatica straordinaria, è un altro punto di riferimento del Botswana. Un safari in questa regione offre l'opportunità di osservare da vicino le maestose creature dell'Africa, compresi leoni, leopardi, ghepardi, giraffe e zebre. Le attività come i safari in jeep, le crociere lungo il fiume Chobe e gli avvistamenti dei grandi felini rendono l'esperienza ancora più emozionante.<br /><br />
+            Ma il Botswana non è solo savana e delta. Il deserto del Kalahari offre una bellezza solenne e una vastità senza tempo. Questa vasta distesa di sabbia rossa e arbusti spinosi è il regno dei Bushmen, il popolo autoctono che ha abitato questa regione per migliaia di anni. Attraversare il deserto del Kalahari è un'avventura in sé, con la possibilità di avvistare leoni del deserto, gazzelle saltellanti e antichi alberi di baobab.<br /><br />
+            Il Botswana è anche patria di parchi e riserve naturali che offrono una protezione essenziale per la fauna selvatica. Il Moremi Game Reserve, situato nel Delta dell'Okavango, è uno dei parchi più belli del continente africano, con paesaggi pittoreschi e una fauna selvatica straordinaria. Il Parco Nazionale del Makgadikgadi Pans, con i suoi vasti sali desertici e le mandrie di zebre migratorie, offre uno spettacolo unico che sembra provenire da un altro pianeta.</p>
+            <div class="pulsanti">
+                <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Botswana">Leggenda</a></p>
+                <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Botswana">Consigli</a></p>
+            </div>
+        </div>
+        <footer class="footer1">
+          <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+      </footer>
+    </body>
+</html>

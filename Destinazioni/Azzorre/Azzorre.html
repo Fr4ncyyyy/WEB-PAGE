@@ -1,0 +1,146 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Azzorre.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+
+            // Funzione per scorrere all'immagine successiva
+            function nextImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    $(".background").css("background-image", "url('../Azzorre/Foto/" + currentImage + ".jpg')");
+                    currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Funzione per scorrere all'immagine precedente
+            function previousImage() {
+                currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                $(".background").animate({ opacity: 0 }, 300, function() {
+                    $(".background").css("background-image", "url('../Azzorre/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 300);
+                });
+            }
+            // Gestore dell'evento per la freccia a destra
+            $("#destra").click(function() {
+                nextImage();
+            });
+
+            // Gestore dell'evento per la freccia a sinistra
+            $("#sinistra").click(function() {
+                previousImage();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $(".header__iconbar").click(function(e) {
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                });
+            });
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass('is_open');
+                e.preventDefault();
+            });
+        });
+    </script>
+  </script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $(".header__iconbar").click(function(e) {
+        $(".Lista").toggleClass('is_open');
+        e.preventDefault();
+      });
+    });
+  </script>
+  </head>
+  <body>
+      <script>
+          $(document).ready(function(){
+              $(".header__iconbar").click(function(e){
+                  $(".Lista").toggleClass('is_open');
+                  e.preventDefault();
+              })
+          });
+      </script>
+    </head>
+    <body>
+        <!----------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    <div class="container">
+        <div class="background">     
+        <div class="arrow left"><i id="destra" class='bx bx-chevron-left' onclick="prec()"></i></div>      
+        <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right' onclick="succ()"></i></div>    
+        </div>
+        </div>
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+          <h2>Azzorre</h2>
+          <p>Le Azzorre, un paradiso nascosto nel cuore dell'Oceano Atlantico, sono un arcipelago mozzafiato che incanta e affascina ogni visitatore. Queste splendide isole portoghesi, situate a metà strada tra l'Europa e l'America del Nord, sono un tesoro naturale di straordinaria bellezza e biodiversità.<br /><br />
+            Immagina lagune azzurre che si riflettono nel cielo, vulcani imponenti che si ergono fieri verso l'alto e scogliere spettacolari che si tuffano nell'oceano. Questo è solo l'inizio dell'incredibile paesaggio delle Azzorre. Le nove isole che compongono l'arcipelago offrono un'esperienza unica, un equilibrio perfetto tra l'imponente potenza della natura e la sua fragilità.<br /><br />
+            Un'esplosione di verde domina il paesaggio, con prati lussureggianti, foreste fitte e campi coltivati. L'aria fresca e pulita accarezza il viso mentre si esplorano sentieri avventurosi e si attraversano riserve naturali protette. Le Azzorre vantano una flora e una fauna straordinarie, molte delle quali endemiche di queste isole remote. Gli amanti della natura saranno rapiti dalla varietà di uccelli, mammiferi marini e piante rare che popolano l'arcipelago.<br /><br />
+            Ma le Azzorre offrono molto di più della loro bellezza naturale. Le isole sono arricchite da una ricca storia e cultura, testimoni delle antiche tradizioni portoghesi e delle influenze marittime. Pittoresche città e villaggi accolgono i visitatori con le loro strade acciottolate, le case colorate e i caratteristici mercati locali, dove è possibile gustare prelibatezze gastronomiche a base di pesce fresco e prodotti locali.<br /><br />
+            L'oceano circostante è un vero e proprio regno da esplorare. Le Azzorre sono un punto di riferimento per gli amanti del whale watching, con numerose specie di balene e delfini che popolano queste acque. I più audaci possono avventurarsi in emozionanti attività come lo snorkeling, l'immersione subacquea o il surf, mentre gli appassionati di pesca possono sfidare le acque profonde in cerca di grandi catture.<br /><br />
+            Le Azzorre sono un rifugio perfetto per chi cerca una fuga dal caos della vita quotidiana, un luogo dove immergersi nella natura selvaggia e ricaricare le energie. Le isole offrono una varietà di sistemazioni accoglienti, tra cui hotel di lusso, affascinanti bed and breakfast e incantevoli case rurali, dove gli ospiti possono godere di autentica ospitalità locale.<br /><br />
+            In conclusione, le Azzorre sono un gioiello nascosto che aspetta di essere scoperto. Un arcipelago di rara bellezza, dove la natura regna sovrana e il fascino autentico della cultura portoghese si fonde con il panorama mozzafiato. Chiunque abbia la fortuna di visitare le Azzorre sarà affascinato dalla loro meraviglia senza tempo e porterà con sé ricordi indelebili di un luogo che sembra sospeso tra il sogno e la realtà.</p>
+            <div class="pulsanti">
+                <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Azzorre">Leggenda</a></p>
+                <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Azzorre">Consigli</a></p>
+            </div>
+        </div>
+        <footer class="footer1">
+          <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+      </footer>
+    </body>
+</html>

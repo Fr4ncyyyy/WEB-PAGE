@@ -1,0 +1,145 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Tokyo.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+
+            // Funzione per scorrere all'immagine successiva
+            function nextImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    $(".background").css("background-image", "url('../Tokyo/Foto/" + currentImage + ".jpg')");
+                    currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Funzione per scorrere all'immagine precedente
+            function previousImage() {
+                currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                $(".background").animate({ opacity: 0 }, 300, function() {
+                    $(".background").css("background-image", "url('../Tokyo/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 300);
+                });
+            }
+            // Gestore dell'evento per la freccia a destra
+            $("#destra").click(function() {
+                nextImage();
+            });
+
+            // Gestore dell'evento per la freccia a sinistra
+            $("#sinistra").click(function() {
+                previousImage();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $(".header__iconbar").click(function(e) {
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                });
+            });
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass('is_open');
+                e.preventDefault();
+            });
+        });
+    </script>
+  </script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $(".header__iconbar").click(function(e) {
+        $(".Lista").toggleClass('is_open');
+        e.preventDefault();
+      });
+    });
+  </script>
+  </head>
+  <body>
+      <script>
+          $(document).ready(function(){
+              $(".header__iconbar").click(function(e){
+                  $(".Lista").toggleClass('is_open');
+                  e.preventDefault();
+              })
+          });
+      </script>
+    </head>
+    <body>
+        <!----------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    <div class="container">
+        <div class="background">     
+        <div class="arrow left"><i id="destra" class='bx bx-chevron-left' onclick="prec()"></i></div>      
+        <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right' onclick="succ()"></i></div>    
+        </div>
+        </div>
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+          <h2>Tokyo</h2>
+          <p>Tokyo è una città di contrasti, dove grattacieli moderni si ergono accanto a antichi templi e giardini zen. I suoi quartieri sono un viaggio attraverso mondi diversi: da Shinjuku, con i suoi alti edifici illuminati al neon e le strade affollate, a Shibuya, famosa per il suo attraversamento pedonale di massa e le vetrine alla moda. Akihabara è un paradiso per gli appassionati di tecnologia e cultura pop, con negozi di elettronica, videogiochi e manga che si estendono all'infinito.<br /><br />
+            Ma Tokyo è molto di più di una città futuristica. Conserva tesori culturali unici che si trovano nei suoi numerosi santuari e templi. Il Tempio di Meiji, immerso nel verde del Parco Yoyogi, incanta i visitatori con la sua imponenza e serenità. Il Tempio di Senso-ji, nel quartiere di Asakusa, è uno dei più antichi e importanti della città, con la sua pagoda e i suoi portici tradizionali che accolgono i pellegrini e i turisti.<br /><br />
+            La scena culinaria di Tokyo è una festa per i sensi. Dai tradizionali ristoranti di ramen ai sushi bar di livello mondiale, i visitatori possono deliziarsi con una vasta gamma di piatti giapponesi autentici. Le strade sono piene di piccoli ristoranti e bancarelle che servono yakitori (spiedini di pollo), takoyaki (palle di polpo) e tantissime altre prelibatezze da gustare.<br /><br />
+            Tokyo è anche un paradiso dello shopping. Dai grandi magazzini di lusso di Ginza alle boutique alla moda di Harajuku, c'è qualcosa per tutti i gusti e budget. I negozi di elettronica di Akihabara offrono una vasta gamma di gadget e dispositivi tecnologici all'avanguardia.<br /><br />
+            La cultura pop giapponese è evidente ovunque si vada a Tokyo. Dai concerti di J-Pop ai cosplay cafè, la città è un centro nevralgico per l'intrattenimento e la creatività. I fan di anime e manga possono visitare i negozi specializzati e i musei dedicati ai loro personaggi preferiti, mentre i fanatici di videogiochi possono sfidarsi nei numerosi arcade che si trovano in città.<br /><br />
+            Tokyo è anche una città sicura e ben organizzata. I suoi efficienti sistemi di trasporto pubblico, tra cui treni, metropolitane e autobus, permettono di spostarsi agevolmente in tutta la città e oltre. I visitatori possono esplorare i quartieri più noti e anche scoprire gemme nascoste lungo le strade secondarie.</p>
+            <div class="pulsanti">
+                <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Tokyo">Leggenda</a></p>
+                <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Tokyo">Consigli</a></p>
+            </div>
+        </div>
+        <footer class="footer1">
+          <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+      </footer>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <!------------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a href="#">Home</a></li>
+                <li class="OggettoLista"><a target="_blank" href="../Destinazioni/Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a target="_blank" href="../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+        <section class="Sezione">
+                <div class="Descrizione">Benvenuti nel nostro sito di viaggi, il portale perfetto per esplorare i tesori nascosi del mondo e creare ricordi indimenticabili. Siamo qui per guidarti in un viaggio di scoperta, offrendoti le migliori destinazioni, consigli di esperti e un'ampia gamma di servizi per rendere ogni tua avventura un'esperienza straordinaria.
+                </div>
+                <footer class="footer">
+                    <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+                </footer>
+        </section>
+    </body>
+</html>

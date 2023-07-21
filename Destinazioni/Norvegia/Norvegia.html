@@ -1,0 +1,144 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Norvegia.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+
+            // Funzione per scorrere all'immagine successiva
+            function nextImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    $(".background").css("background-image", "url('../Norvegia/Foto/" + currentImage + ".jpg')");
+                    currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Funzione per scorrere all'immagine precedente
+            function previousImage() {
+                currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                $(".background").animate({ opacity: 0 }, 300, function() {
+                    $(".background").css("background-image", "url('../Norvegia/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 300);
+                });
+            }
+            // Gestore dell'evento per la freccia a destra
+            $("#destra").click(function() {
+                nextImage();
+            });
+
+            // Gestore dell'evento per la freccia a sinistra
+            $("#sinistra").click(function() {
+                previousImage();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $(".header__iconbar").click(function(e) {
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                });
+            });
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass('is_open');
+                e.preventDefault();
+            });
+        });
+    </script>
+  </script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $(".header__iconbar").click(function(e) {
+        $(".Lista").toggleClass('is_open');
+        e.preventDefault();
+      });
+    });
+  </script>
+  </head>
+  <body>
+      <script>
+          $(document).ready(function(){
+              $(".header__iconbar").click(function(e){
+                  $(".Lista").toggleClass('is_open');
+                  e.preventDefault();
+              })
+          });
+      </script>
+    </head>
+    <body>
+        <!----------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    <div class="container">
+        <div class="background">     
+        <div class="arrow left"><i id="destra" class='bx bx-chevron-left' onclick="prec()"></i></div>      
+        <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right' onclick="succ()"></i></div>    
+        </div>
+        </div>
+        <div class="ContainerBanner">
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+          <h2>Norvegia</h2>
+          <p>La Norvegia, una terra magica in cui la maestosità della natura incontra l'eleganza e il fascino della cultura nordica. Avventurarsi in questo paese significa immergersi in un vero e proprio paradiso per gli amanti della bellezza paesaggistica. I suoi fiordi spettacolari, incisi come gioielli nella costa, ti cattureranno con le loro acque cristalline e le pareti rocciose a strapiombo. I fiordi norvegesi sono un esempio mozzafiato dell'imponente potere della natura, che ha scolpito queste meraviglie geologiche nel corso dei millenni. Le montagne maestose, coperte da nevi perenni, offrono paesaggi che sembrano usciti da una fiaba. Scalare le cime norvegesi è un'esperienza che ti farà sentire come un vero esploratore, ammirando panorami mozzafiato e respirando l'aria fresca e pura.<br /> <br />
+            Ma la Norvegia non è solo natura selvaggia. Le sue città, come Oslo e Bergen, sono dei veri tesori urbani. L'architettura moderna si fonde armoniosamente con i quartieri storici, creando un ambiente unico e affascinante. Le strade acciottolate, i pittoreschi porti e i caffè affollati aggiungono un tocco di vivacità a questi luoghi, mentre i musei e le gallerie d'arte esibiscono una ricchezza culturale sorprendente. Inoltre, la Norvegia è famosa per la sua ospitalità e la sua qualità di vita eccezionale. La gente è calorosa e accogliente, pronta ad aprirti le porte della loro cultura e tradizioni. Potrai gustare i sapori unici della cucina norvegese, che spazia dai freschi prodotti ittici alle prelibatezze locali come il salmone affumicato e il gamalost, un formaggio tradizionale.<br /> <br />
+            Infine, il fenomeno delle aurore boreali rende la Norvegia ancora più affascinante. Osservare il cielo notturno danzare con luci colorate è un'esperienza magica che ti lascerà senza fiato.<br /> <br />
+            La Norvegia è un'incantevole combinazione di natura incontaminata, storia affascinante, cultura vibrante e un popolo amichevole. Questa terra incantata è pronta ad accoglierti e a regalarti esperienze indimenticabili.</p>
+            <div class="pulsanti">
+            <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Norvegia">Leggenda</a></p>
+            <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Norvegia">Consigli</a></p>
+        </div>
+        </div>
+        </div>
+        <footer class="footer1">
+          <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+      </footer>
+    </body>
+</html>

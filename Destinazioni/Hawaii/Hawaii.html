@@ -1,0 +1,146 @@
+<html lang="it">
+    <head>
+        <title>SITO</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" type="text/css" href="Hawaii.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+
+            // Funzione per scorrere all'immagine successiva
+            function nextImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    $(".background").css("background-image", "url('../Hawaii/Foto/" + currentImage + ".jpg')");
+                    currentImage = currentImage % 4 + 1; // Passa all'immagine successiva
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Funzione per scorrere all'immagine precedente
+            function previousImage() {
+                currentImage = (currentImage - 2 + 4) % 4 + 1; // Passa all'immagine precedente
+                $(".background").animate({ opacity: 0 }, 300, function() {
+                    $(".background").css("background-image", "url('../Hawaii/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 300);
+                });
+            }
+            // Gestore dell'evento per la freccia a destra
+            $("#destra").click(function() {
+                nextImage();
+            });
+
+            // Gestore dell'evento per la freccia a sinistra
+            $("#sinistra").click(function() {
+                previousImage();
+            });
+        });
+        </script>
+    </head>
+    <body>
+        <script>
+            $(document).ready(function() {
+                $(".header__iconbar").click(function(e) {
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                });
+            });
+    </script>
+</head>
+<body>
+    <script>
+        $(document).ready(function() {
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass('is_open');
+                e.preventDefault();
+            });
+        });
+    </script>
+  </script>
+</head>
+<body>
+  <script>
+    $(document).ready(function() {
+      $(".header__iconbar").click(function(e) {
+        $(".Lista").toggleClass('is_open');
+        e.preventDefault();
+      });
+    });
+  </script>
+  </head>
+  <body>
+      <script>
+          $(document).ready(function(){
+              $(".header__iconbar").click(function(e){
+                  $(".Lista").toggleClass('is_open');
+                  e.preventDefault();
+              })
+          });
+      </script>
+    </head>
+    <body>
+        <!----------
+            HEADER
+        ------------->
+        <header class="header">
+            <a href="" class="header__iconbar">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="Lista" id="menu">
+                <li class="OggettoLista"><a target="_blank" href="../../Home/Home.html">Home</a></li>
+                <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a target="_blank" href="../Destinazioni.html">Destinazioni</a></li>
+                <li class="OggettoLista"><a href="../../Racconti/Racconti.html">Leggende</a></li>
+                <li class="OggettoLista"><a href="../../Consigli/Consigli.html">Consigli</a></li>
+            </ul>
+            <div class="clearfix"></div>
+        </header>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".header__iconbar").click(function(e){
+                    $(".Lista").toggleClass('is_open');
+                    e.preventDefault();
+                })
+            });
+        </script>
+    <div class="container">
+        <div class="background">     
+        <div class="arrow left"><i id="destra" class='bx bx-chevron-left' onclick="prec()"></i></div>      
+        <div class="arrow right"><i id="sinistra" class='bx bx-chevron-right' onclick="succ()"></i></div>    
+        </div>
+        </div>
+        <div class="Banner">
+            <img class="B1" src="../../Banner/Banner1.png">
+            <video autoplay muted loop>
+                <source src="../../Banner/BannerVideo2.mp4" type="video/mp4">
+            </video>
+            <img class="B3" src="../../Banner/Banner3.png">
+            <img class="B4" src="../../Banner/Banner4.png">
+            <img class="B5" src="../../Banner/Banner5.png">
+        </div>
+        <div class="container_testo">
+          <h2>Hawaii</h2>
+          <p>Le Hawaii, un arcipelago di paradiso nel cuore dell'Oceano Pacifico, sono una destinazione da sogno che incanta con la sua bellezza mozzafiato, la sua cultura unica e il suo stile di vita rilassato. Queste isole vulcaniche, conosciute anche come "le isole dell'eterna primavera", offrono una combinazione perfetta di spiagge spettacolari, vulcani attivi, foreste lussureggianti e una ricca storia polinesiana.<br /><br />
+            Immagina sabbie dorate che si estendono all'infinito, acque turchesi che lambiscono delicatamente la riva e palme che ondeggiano dolcemente nel vento tropicale. Le spiagge delle Hawaii sono un vero paradiso terrestre. Da Waikiki Beach, con il suo skyline urbano e la sua atmosfera vivace, alla celebre spiaggia di Hanauma Bay, perfetta per lo snorkeling tra coralli e pesci tropicali, ogni tratto di costa è un invito a rilassarsi, fare surf o godersi spettacolari tramonti sull'oceano.<br /><br />
+            Ma le Hawaii offrono molto di più delle loro incantevoli spiagge. L'arcipelago è un vero e proprio tesoro naturale. Il Parco Nazionale del Vulcano delle Hawaii è una delle principali attrazioni dell'isola grande, con i suoi vulcani attivi che offrono un'esperienza unica al mondo. Gli appassionati di trekking possono esplorare i sentieri che si snodano tra paesaggi lunari, crateri fumanti e fiumi di lava solidificata.<br /><br />
+            La natura delle Hawaii è ricca di biodiversità. Foreste pluviali lussureggianti, come la Waimea Valley sull'isola di Oahu, sono un rifugio per una varietà di specie vegetali e animali uniche al mondo. Gli amanti dell'avventura possono fare escursioni in elicottero per ammirare le maestose cascate di Kauai o fare snorkeling nelle acque cristalline della Baia di Kealakekua a Big Island, dove si possono avvistare delfini e tartarughe marine.<br /><br />
+            La cultura hawaiana è profondamente radicata nella vita quotidiana delle isole. I luoghi storici come il Palazzo Iolani, a Honolulu, raccontano la storia dei re e delle regine delle Hawaii, mentre il Polynesian Cultural Center a Oahu offre un'immersione completa nella cultura polinesiana, con spettacoli tradizionali e artigianato locale.<br /><br />
+            La cucina hawaiana è un tripudio di sapori freschi e ingredienti locali. I piatti tradizionali come il poke (insalata di pesce crudo marinato), il kalua pig (maiale cotto sottoterra) e il lomi-lomi salmon (insalata di salmone) sono un'esplosione di gusti tropicali che delizieranno i palati più esigenti. Inoltre, l'influenza di altre culture come la giapponese e la filippina ha portato a una fusione culinaria unica che offre una vasta scelta di ristoranti e bancarelle di strada.
+            </p>
+            <div class="pulsanti">
+                <p id="ciao"><a target="_blank" style="color:black; text-decoration: none;" href="../../Racconti/Racconti.html#Item_Hawaii">Leggenda</a></p>
+                <p id="ciao1"><a target="_blank" style="color:black; text-decoration: none;" href="../../Consigli/Consigli.html#Item_Hawaii">Consigli</a></p>
+            </div>
+        </div>
+        <footer class="footer1">
+          <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+      </footer>
+    </body>
+</html>

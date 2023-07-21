@@ -1,0 +1,407 @@
+body
+{
+    position:relative;
+
+}
+.items-container {
+    display: flex;
+    flex-direction: column; /* Imposta l'allineamento verticale */
+    align-items: center; /* Centra gli elementi lungo l'asse orizzontale */
+    width: 100%;
+  }
+  
+  /* Aggiorna le regole CSS delle sezioni "Item_Norvegia" e delle altre sezioni se necessario */
+  
+  .Item_Norvegia,
+  .Item_Azzorre,
+  .Item_Berlino,
+  .Item_Tokyo,
+  .Item_Botswana,
+  .Item_Hawaii,
+  .Item_Islanda {
+    width: 70%;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    height: auto;
+  }
+  
+  .Item_Norvegia h1,
+  .Item_Norvegia h2,
+  .Item_Azzorre h1,
+  .Item_Azzorre h2,
+  .Item_Berlino h1,
+  .Item_Berlino h2,
+  .Item_Tokyo h1,
+  .Item_Tokyo h2,
+  .Item_Botswana h1,
+  .Item_Botswana h2,
+  .Item_Hawaii h1,
+  .Item_Hawaii h2,
+  .Item_Islanda h1,
+  .Item_Islanda h2 {
+    text-align: center;
+  }
+/*--------------------------
+        IMMGAINI
+--------------------------*/
+
+.container
+{
+  width: 90%; 
+  height:30em;
+  margin-left: 5%; 
+  margin-right: 5%;
+  margin-top:30px;
+  border:2px solid black;
+  position: relative;
+  border-radius: 10px;
+}
+.background
+{
+  position: relative;
+  height: 30em;
+  background-image: url('../Racconti/Foto/1.jpg');  
+  background-size: cover; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+  .arrow
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height:40px;
+    color: white;
+    font-size:80px;
+}
+.arrow:hover
+{
+  cursor:pointer;
+}
+  .left
+{ 
+  left: 0px;
+}
+  .right
+{
+  right: 30px;
+}
+
+/*--------------------------
+    NAVBAR INTERNA
+--------------------------*/
+
+.Lista .Item
+{
+    padding:20px;
+    list-style: none;
+    display: inline-block;
+    margin-top:30px;
+    font-size:20px;
+    font-weight: bold;
+}
+.Lista .Item a
+{
+    padding:20px;
+    list-style: none;
+    display: inline-block;
+    color:#009688;
+    text-decoration: none;
+}
+/*--------------------------
+        NORVEGIA
+--------------------------*/
+.Item_Norvegia
+{
+    width:50%;
+    margin-top:12em;
+    margin-bottom:6em;
+    height:auto;
+    position: relative;
+}
+.Item_Norvegia h1,h2
+{
+    text-align: center;
+}
+.Item_Norvegia p
+{
+    text-align:justify;
+}
+.Item_Norvegia .B1,.B2
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 15em; /* Regola la larghezza del banner a sinistra e a destra */
+    height: auto; /* Regola l'altezza del banner a sinistra e a destra */
+}
+.B1
+{
+    left:-45%;
+}
+
+.B2
+{
+    right:-45%;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+@media (max-width:1175px)
+{
+    .NAVBAR_interna
+    {
+        display: none;
+    }
+    .Item_Norvegia
+    {
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+    .B1,
+    .B2
+    {
+        display: none;
+    }
+}
+/*--------------------------
+        AZZORRE
+--------------------------*/
+.Item_Azzorre
+{
+    width:50%;
+    margin-top:6em;
+    margin-bottom:6em;
+    height:auto;
+    position: relative;
+}
+.Item_Azzorre h1,h2
+{
+    text-align: center;
+}
+.Item_Azzorre p
+{
+    text-align:justify;
+}
+.B1, .B2
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    width: 15em; /* Regola la larghezza del banner a sinistra e a destra */
+    height: auto; /* Regola l'altezza del banner a sinistra e a destra */
+}
+.B1
+{
+    left:-45%;
+}
+.B2
+{
+    right:-45%;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+@media (max-width:1175px)
+{
+    .Item_Azzorre
+    {
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+    .B1,.B2
+    {
+        display: none;
+    }
+}
+/*--------------------------
+        BERLINO
+--------------------------*/
+.Item_Berlino
+{
+    position: relative;
+    width:50%;
+    margin-top:6em;
+    margin-bottom:6em;
+    height:auto;
+}
+.Item_Berlino h1,h2
+{
+    text-align: center;
+}
+.Item_Berlino p
+{
+    text-align:justify;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+
+@media (max-width:1175px)
+{
+    .Item_Berlino
+    {
+        position: relative;
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+/*--------------------------
+        TOKYO
+--------------------------*/
+
+.Item_Tokyo
+{
+    position: relative;
+    width:50%;
+    margin-top:6em;
+    margin-bottom:6em;
+    height:auto;
+}
+.Item_Tokyo h1,h2
+{
+    text-align: center;
+}
+.Item_Tokyo p
+{
+    text-align:justify;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+
+@media (max-width:1175px)
+{
+    .Item_Tokyo
+    {
+        position: relative;
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+/*--------------------------
+        BOTSWANA
+--------------------------*/
+
+.Item_Botswana
+{
+    position: relative;
+    width:50%;
+    margin-top:6em;
+    margin-bottom:6em;
+    height:auto;
+}
+.Item_Botswana h1,h2
+{
+    text-align: center;
+}
+.Item_Botswana p
+{
+    text-align:justify;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+
+@media (max-width:1175px)
+{
+    .Item_Botswana
+    {
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+/*--------------------------
+        HAWAII
+--------------------------*/
+
+.Item_Hawaii
+{
+    position: relative;
+    width:50%;
+    margin-top:6em;
+    margin-bottom:6em;
+    height:auto;
+}
+.Item_Hawaii h1,h2
+{
+    text-align: center;
+}
+.Item_Hawaii p
+{
+    text-align:justify;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+
+@media (max-width:1175px)
+{
+    .Item_Hawaii
+    {
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+/*--------------------------
+        ISLANDA
+--------------------------*/
+
+.Item_Islanda
+{
+    position: relative;
+    width:50%;
+    margin-top:6em;
+    margin-bottom:12em;
+    height:auto;
+}
+.Item_Islanda h1,h2
+{
+    text-align: center;
+}
+.Item_Islanda p
+{
+    text-align:justify;
+}
+/*--------------------------
+        MEDIA
+--------------------------*/
+
+@media (max-width:1175px)
+{
+    .Item_Islanda
+    {
+        width:70%;
+        margin-left:15%;
+        margin-right:15%;
+    }
+}
+/*--------------------------
+        FOOTER
+--------------------------*/
+.footer2
+{
+    width:100%;
+    height:3em;
+    background-color:#333;
+    text-align: center;
+    left:0px;
+    bottom:0px;
+}
+.footer2 p
+{
+    padding-bottom:1em;
+    padding-top:1em;
+}
+.footer2 span
+{
+    color:green;
+    font-style: italic;
+}

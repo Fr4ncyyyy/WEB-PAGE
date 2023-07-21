@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Racconti | HappyTravel</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link rel="stylesheet" type="text/css" href="../Racconti/Racconti.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="" class="header__iconbar">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <ul class="Lista" id="menu">
+            <li class="OggettoLista"><a target="_blank" href="../Home/Home.html">Home</a></li>
+            <li class="OggettoLista"><a target="_blank" href="../Destinazioni/Destinazioni.html">Destinazioni</a></li>
+            <li class="OggettoLista" style="text-decoration: underline; color:#fff"><a href="#">Leggende</a></li>
+            <li class="OggettoLista"><a href="../Consigli/Consigli.html">Consigli</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </header>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var currentImage = 1; // Immagine attualmente visualizzata
+            var totalImages = 29; // Numero totale di immagini
+            var intervalId;
+
+            // Funzione per cambiare l'immagine successiva
+            function changeImage() {
+                $(".background").animate({ opacity: 0 }, 500, function() {
+                    currentImage = (currentImage % totalImages) + 1;
+                    $(".background").css("background-image", "url('../Racconti/Foto/" + currentImage + ".jpg')");
+                    $(".background").animate({ opacity: 1 }, 500);
+                });
+            }
+
+            // Avvia lo slideshow automatico
+            function startSlideshow() {
+                intervalId = setInterval(changeImage, 5000);
+            }
+
+            // Ferma lo slideshow automatico
+            function stopSlideshow() {
+                clearInterval(intervalId);
+            }
+
+            // Avvia lo slideshow automatico all'avvio della pagina
+            startSlideshow();
+
+            // Gestione del click sull'icona della barra di navigazione
+            $(".header__iconbar").click(function(e) {
+                $(".Lista").toggleClass("is_open");
+                e.preventDefault();
+            });
+
+            // Aggiungi animazione di scorrimento alla sezione corrispondente al link cliccato
+            $("a[href^='#']").click(function(e) {
+                e.preventDefault();
+
+                var target = $(this).attr("href");
+                var offset = $(target).offset().top;
+
+                $("html, body").animate({ scrollTop: offset }, 800);
+            });
+        });
+    </script>
+
+    <!-- Resto del tuo codice HTML -->
+    <div class="container">
+        <div class="background"></div>
+    </div>
+    <section class="NAVBAR_interna">
+        <ul class="Lista" id="menu">
+            <li class="Item"><a href="#Item_Norvegia">Norvegia</a></li>
+            <li class="Item"><a href="#Item_Azzorre">Azzorre</a></li>
+            <li class="Item"><a href="#Item_Berlino">Berlino</a></li>
+            <li class="Item"><a href="#Item_Tokyo">Tokyo</a></li>
+            <li class="Item"><a href="#Item_Botswana">Botswana</a></li>
+            <li class="Item"><a href="#Item_Hawaii">Hawaii</a></li>
+            <li class="Item"><a href="#Item_Islanda">Islanda</a></li>
+        </ul>
+        <div class="clearfix"></div>
+    </section>
+    <div class="items-container">
+    <section id="Item_Norvegia" class="Item_Norvegia">
+    <div class="B1">
+            <img style="width:15em;" src="Norvegia/1.png">
+    </div>
+        <h1 style="color:rgba(65, 105, 225);">Norvegia</h1>
+        <h2 style="color:rgba(65, 105, 225);">Il Ladro di Fuoco</h2>
+        <p>In un tempo lontano, nella regione montuosa della Norvegia, c'era un potente drago di nome Fafnir. Fafnir custodiva un tesoro inestimabile, che comprendeva un anello magico e un'immensa quantità di oro. Il suo furioso soffio di fuoco rendeva impossibile avvicinarsi al tesoro.<br /><br />
+            Un giorno, un giovane coraggioso di nome Sigurd sentì parlare del tesoro di Fafnir e decise di sfidare il drago per cercare di ottenerlo. Armato di una spada leggendaria, Sigurd si diresse verso la tana del drago.<br />
+            Dopo una lunga e pericolosa avventura, Sigurd finalmente raggiunse la tana di Fafnir. Con grande coraggio, affrontò il drago in una feroce battaglia. Sigurd dimostrò la sua destrezza e la sua intelligenza, evitando i soffioni di fuoco di Fafnir e infliggendo ferite mortali al drago.<br /><br />
+            Mentre il drago stava per morire, Sigurd si avvicinò a lui e gli pose una domanda: "Drago, cosa farei con il tesoro che custodisci?". Fafnir, indebolito e morente, rispose che il tesoro portava solo sfortuna e che chiunque lo possedesse sarebbe stato destinato a un destino tragico.<br /><br />
+            Sigurd comprese il significato delle parole di Fafnir e decise di prendere solo l'anello magico. Mentre lo faceva, una goccia di sangue di Fafnir cadde sulla sua mano. Sigurd, inconsapevole del fatto che il sangue di Fafnir gli avrebbe concesso la capacità di comprendere il linguaggio degli uccelli, portò l'anello a casa.<br /><br />
+            Successivamente, Sigurd incontrò due corvi che stavano discutendo del tesoro. I corvi, Huginn e Muninn, erano in realtà gli uccelli di Odino e rivelarono a Sigurd che il tesoro lo avrebbe portato solo a tradimenti e tragedie.<br />
+            La leggenda di Sigurd e il suo confronto con Fafnir rappresenta la lotta tra il bene e il male e l'avventura di un eroe coraggioso alla ricerca del tesoro. La storia mette in evidenza anche il tema della saggezza e della prudenza, poiché Sigurd decide di non prendere l'intero tesoro e di evitarne così le conseguenze negative.</p>
+            <div class="B2">
+                <img style="width:15em;" src="Norvegia/2.png">
+            </div>
+        </section>
+    <hr id="Item_Azzorre" style="width:100%; border:1px solid black">
+    <section class="Item_Azzorre">
+        <video class="B1" autoplay muted loop>
+            <source style="width:15em;" src="Azzorre/1.mp4">
+        </video>
+        <h1 style="color:#87CEEB;">Azzorre</h1>
+        <h2 style="color:#87CEEB;">La Principessa della Laguna</h2>
+        <p>Isabella era di una bellezza incantevole, con lunghi capelli scuri e occhi profondi come l'oceano. Era conosciuta per la sua gentilezza e la sua anima generosa.<br /><br />
+            Un giorno, mentre Isabella passeggiava lungo la riva di una laguna tranquilla, notò una creatura marina che emergeva dall'acqua. Era un delfino dalle scaglie argento, noto come "Il Custode della Laguna". Il delfino era affascinato dalla bellezza e dalla purezza di Isabella e si innamorò perdutamente di lei.<br /><br />
+            Il delfino cominciò a visitare Isabella ogni giorno, saltando graziosamente fuori dall'acqua e intrattenendo la principessa con le sue acrobazie e le sue canzoni melodiose. Isabella e il delfino svilupparono una connessione profonda, una relazione speciale basata sull'amore e sulla fiducia reciproca.<br /><br />
+            Tuttavia, questa relazione non passò inosservata. Un giorno, il crudele stregone dell'isola, geloso del legame tra Isabella e il delfino, decise di separarli. Lanciò un incantesimo sulla principessa, trasformandola in una statua di pietra situata proprio accanto alla laguna.<br /><br />
+            Il delfino, disperato per la perdita dell'amata principessa, si tuffò nell'oceano e iniziò a cercare un modo per rompere l'incantesimo. Nuotò attraverso gli abissi e consultò creature magiche e sagge in tutto l'oceano. Alla fine, dopo anni di ricerca e di perseveranza, il delfino scoprì un antico talismano che aveva il potere di sciogliere l'incantesimo.<br /><br />
+            Il delfino tornò alla laguna e trovò la statua di Isabella ancora lì, immobile e fredda. Con grande attenzione, posò il talismano sulla statua. Un raggio di luce magica avvolse Isabella e, gradualmente, la sua forma di pietra si trasformò di nuovo in carne e sangue.<br /><br />
+            Isabella riaprì gli occhi e si ritrovò di fronte al suo amato delfino. Il loro legame era rimasto intatto nonostante il tempo trascorso separati. Isabella e il delfino nuotarono insieme nella laguna, felici di essere di nuovo riuniti.<br /><br />
+            Da allora, si dice che Isabella e il delfino siano diventati guardiani della laguna, proteggendo il luogo e i suoi abitanti. Si racconta che, durante le notti di luna piena, si possa ancora sentire il canto del delfino e vedere la principessa Isabella danzare graziosamente sulle acque della laguna, simbolo dell'amore eterno e della magia delle Azzorre.</p>
+        <div class="B2">
+            <img style="width:15em;" src="Azzorre/2.png">
+        </div>
+        </section>
+    <hr id="Item_Berlino" style="width:100%; border:1px solid black">
+    <section class="Item_Berlino">
+        <div class="B1">
+            <img style="width:15em;" src="Berlino/1.png">
+        </div>
+        <h1 style="color:#FF0000;">Berlino</h1>
+        <h2 style="color:#FF0000;">Berlino Sotterranea</h2>
+        <p>Secondo la leggenda, i sotterranei di Berlino erano inizialmente utilizzati come rifugi durante i periodi di guerra e conflitto. Offrivano protezione agli abitanti della città durante gli attacchi e permettevano di spostarsi segretamente da un punto all'altro senza essere scoperti.<br /><br />
+            Tuttavia, nel corso dei secoli, i sotterranei di Berlino hanno anche svolto altri ruoli. Si dice che abbiano ospitato riunioni segrete, nascondigli di spie e contrabbandieri. Alcuni affermano che persino membri di società segrete e ordini misteriosi abbiano utilizzato questi sotterranei per i loro incontri riservati.<br /><br />
+            Ma la leggenda della Berlino Sotterranea è anche piena di racconti di fantasmi e presenze misteriose. Si dice che le profonde gallerie siano abitate da spiriti inquieti e che le pareti siano testimoni di eventi tragici del passato. Alcuni affermano di aver sentito rumori strani e di aver visto figure spettrali mentre esploravano questi luoghi oscuri.<br /><br />
+            Molte parti dei sotterranei di Berlino rimangono ancora inesplorate e sconosciute, aggiungendo un'aura di mistero e avventura alla leggenda. Alcuni temerari cercano ancora oggi di esplorare queste profondità sotterranee, nella speranza di scoprire segreti nascosti e antichi tesori.<br /><br />
+            La leggenda della Berlino Sotterranea rappresenta un'ombra intrigante che si estende sotto la vivace superficie della città, sottolineando la sua storia complessa e le sue profonde radici. Questa storia affascinante attrae l'immaginazione e invita le persone a esplorare i misteri sepolti sotto i marciapiedi di Berlino.</p>
+            <div class="B2">
+                <img style="width:15em;" src="Berlino/2.png">
+            </div>
+        </section>
+    <hr id="Item_Tokyo" style="width:100%; border:1px solid black">
+    <section class="Item_Tokyo">
+        <div class="B1">
+            <img style="width:15em;" src="Tokyo/1.png">
+        </div>
+        <h1 style="color:#FFA500;">Tokyo</h1>
+        <h2 style="color:#FFA500;">Yurei Yokocho</h2>
+        <p>Secondo la leggenda, Yurei Yokocho è un antico vicolo che conserva le tracce degli spiriti tormentati. Si dice che gli spiriti dei defunti vaghino lungo questa strada, cercando redenzione o cercando di vendicare le loro morti tragiche. La strada è avvolta da un'atmosfera cupa e misteriosa, con un senso palpabile di presenze soprannaturali.<br /><br />
+            Coloro che hanno avventurato nella Yurei Yokocho riferiscono di avvistare figure spettrali, udire sussurri nell'aria e provare una sensazione di freddo intenso. Alcuni raccontano di incontri con fantasmi che si materializzano e scompaiono improvvisamente, o di essere seguiti da presenze invisibili durante il loro passaggio.<br /><br />
+            La leggenda racconta anche delle storie tragiche dei fantasmi che infestano Yurei Yokocho. Ci sono racconti di donne afflitte dall'amore non corrisposto, samurai vendicativi e bambini fantasmi in cerca di pace. Ognuno di questi spiriti ha una storia da raccontare, una storia di dolore e perdita che li ha intrappolati nel regno dei morti.<br /><br />
+            Nonostante la sua aura spettrale, Yurei Yokocho attrae anche molti curiosi e avventurieri. Alcuni cercano di catturare fotografie dei fantasmi, nella speranza di documentare l'esistenza del soprannaturale. Altri vengono attirati dalla sfida di attraversare il vicolo, sfidando il terrore che si cela dietro di esso.<br /><br />
+            La leggenda di Yurei Yokocho rappresenta l'intersezione tra la modernità e la tradizione del Giappone, un richiamo al passato che si fa strada nel presente. Questa storia affascinante invita i coraggiosi a esplorare il lato oscuro di Tokyo e a scoprire gli spiriti che ancora vagano tra le sue strade.</p>
+            <div class="B2">
+                <img style="width:15em;" src="Tokyo/2.png">
+            </div>
+        </section>
+    <hr id="Item_Botswana" style="width:100%; border:1px solid black">
+    <section class="Item_Botswana">
+        <div class="B1">
+            <img style="width:15em;" src="Botswana/1.png">
+        </div>
+        <h1 style="color:#8B4513;">Botswana</h1>
+        <h2 style="color:#8B4513;">Lago Delle Stelle</h2>
+        <p>Secondo la leggenda, il lago era un luogo di incontro tra il mondo terreno e quello celeste. Si credeva che le stelle scendessero dal cielo notturno per immergersi nelle acque del lago, trasformandolo in un'incantevole distesa di luce. I nativi del Botswana credevano che il lago avesse il potere di guarire, purificare e portare fortuna a coloro che vi si immergessero.<br /><br />
+            Si diceva che solo pochi prescelti potessero assistere al meraviglioso spettacolo delle stelle danzanti nel lago. Questi fortunati testimoni venivano considerati benedetti e spesso acquisivano poteri speciali o una saggezza straordinaria grazie alla loro esperienza.<br /><br />
+            Tuttavia, con il passare del tempo, l'accesso al lago delle stelle divenne sempre più difficile. Si racconta che le stelle, temendo che il loro potere potesse essere abusato o che il lago potesse essere profanato, decisero di nascondere l'accesso al loro magico regno.<br /><br />
+            Da allora, il lago delle stelle è diventato un luogo leggendario, avvolto da un alone di mistero e magia. Le persone continuano a cercare il lago nella speranza di catturare un raro sguardo alle stelle che si riflettono sulle sue acque, ma pochi riescono a trovarlo.<br /><br />
+            La leggenda del lago delle stelle rappresenta la connessione tra l'umanità e il cielo, la meraviglia e l'ammirazione per la bellezza della natura. Questa storia incanta gli abitanti del Botswana e invita i visitatori a immergersi nel fascino e nella magia di questa terra straordinaria.</p>
+            <div class="B2">
+                <img style="width:15em;" src="Botswana/2.png">
+            </div>
+        </section>
+    <hr id="Item_Hawaii" style="width:100%; border:1px solid black">
+    <section class="Item_Hawaii">
+        <div class="B1">
+            <img style="width:15em;" src="Hawaii/1.png">
+        </div>
+        <h1 style="color:#00B2B2;">Hawaii</h1>
+        <h2 style="color:#00B2B2;">Pele e Hi'iaka</h2>
+        <p>Pele è la dea del fuoco, dei vulcani e dei flussi di lava. Si dice che abiti nel vulcano Kilauea sull'isola di Hawaii, considerato il suo regno. Pele è una figura potente e passionale, con una personalità tempestosa. Si dice che il suo passaggio attraverso le isole abbia creato nuovi terreni vulcanici e che il suo potere sia legato alla forza distruttiva e creativa del fuoco.<br /><br />
+            Hi'iaka, invece, è la sorella minore di Pele e la dea delle foreste, della guarigione e dell'hula (la danza tradizionale hawaiana). Hi'iaka è una figura gentile e amorevole, spesso descritta con un profondo legame con la natura e la cura degli esseri viventi. Si racconta che abbia accompagnato la sorella Pele durante i suoi viaggi attraverso le isole.<br /><br />
+            La leggenda narra delle avventure di Pele e Hi'iaka mentre viaggiavano attraverso le diverse isole dell'arcipelago hawaiano. Durante i loro viaggi, Pele e Hi'iaka si scontrarono con spiriti maligni, affrontarono pericoli e rischiarono le loro vite. Insieme, utilizzarono i loro poteri divini per proteggere le terre e le persone delle Hawaii.<br /><br />
+            La leggenda di Pele e Hi'iaka rappresenta il legame profondo tra il popolo hawaiano e la natura che li circonda. Racconta della forza e della bellezza dei vulcani, delle foreste lussureggianti e della danza hula, tutti elementi che svolgono un ruolo importante nella cultura e nella spiritualità hawaiana.<br /><br />
+            Ancora oggi, le storie di Pele e Hi'iaka sono tramandate attraverso la tradizione orale e continuano a essere celebrate nelle arti, nella danza e nelle rappresentazioni teatrali delle Hawaii. Questa leggenda è un tributo alla ricca eredità delle isole e all'intreccio tra il divino e l'umano che permea la vita hawaiana.</p>
+            <div class="B2">
+                <img style="width:15em;" src="Hawaii/2.png">
+            </div>
+        </section>
+    <hr id="Item_Islanda" style="width:100%; border:1px solid black">
+    <section class="Item_Islanda">
+        <div class="B1">
+            <img style="width:15em;" src="Islanda/1.png">
+        </div>
+        <h1 style="color:green;">Islanda</h1>
+        <h2 style="color:green;">Ymir e la Creazione dell'Islanda</h2>
+        <p>Secondo la mitologia nordica, l'Islanda fu creata da Ymir, una gigantesca entità primordiale. Ymir era una figura colossale, il primo essere vivente nel cosmo. Si dice che fosse composto da ghiaccio e fuoco, rappresentando così le forze opposte e complementari della natura.<br /><br />
+            Un giorno, in una battaglia epica tra gli dei e Ymir, quest'ultimo fu sconfitto. Gli dei abbatterono il gigante e lo smembrarono, dando origine a diverse parti del mondo. Il suo corpo divenne le terre, i fiumi e le montagne, mentre il suo sangue si trasformò negli oceani che circondano l'Islanda.<br /><br />
+            Si dice che l'Islanda sia sorta dal cranio di Ymir. La sua forma montuosa e vulcanica è il risultato dell'antica battaglia e della sua deposizione sulla terra. Le scosse di terremoto e le eruzioni vulcaniche che ancora oggi si verificano sull'isola sono considerate come il respiro e i sussulti residui di Ymir.<br /><br />
+            La leggenda di Ymir e la Creazione dell'Islanda rappresenta la connessione profonda tra la terra, la natura e la mitologia nordica. Questa storia mitica riflette l'ambiente unico dell'Islanda, con le sue vaste distese di ghiaccio, le maestose montagne e le potenti forze geotermiche.<br /><br />
+            Ancora oggi, l'Islanda è considerata una terra di antiche leggende e miti. Le storie come quella di Ymir alimentano l'immaginazione degli islandesi e dei visitatori, contribuendo a creare un senso di meraviglia e rispetto per la potenza e la bellezza della natura islandese.</p>
+            <div class="B2">
+                <img style="width:15em;" src="Islanda/2.png">
+            </div>
+        </section>
+    </div>
+    <footer class="footer2">
+        <p>2023 - Copyright: <span>Francesco Vacca</span></p>
+    </footer>
+</body>
+</html>
